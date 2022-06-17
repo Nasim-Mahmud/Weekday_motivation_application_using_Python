@@ -15,7 +15,7 @@ with open("quotes.txt", "r") as data:
 
 # Sending mail
 sender_email = "tmailone01@gmail.com"
-sender_email_pass = "rteqejuqqdhcgpzx"
+sender_email_pass = "rteqejuqqdhcgpzx"  # Not the actual password.
 
 receiver_email = "tmailtwo02@yahoo.com"
 
