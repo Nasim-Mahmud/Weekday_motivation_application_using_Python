@@ -13,3 +13,17 @@ with open("quotes.txt", "r") as data:
     quote = random.choice(all_quotes)
     print(quote)
 
+# Sending mail
+sender_email = "tmailone01@gmail.com"
+sender_email_pass = "rteqejuqqdhcgpzx"
+
+receiver_email = "tmailtwo02@yahoo.com"
+
+with SMTP("smtp.gmail.com", 587) as connection:
+    connection.starttls()
+    connection.login(user=sender_email, password=sender_email_pass)
+    connection.sendmail(from_addr=sender_email,
+                        to_addrs=receiver_email,
+                        msg=f"Subject:WeekDay Motivation For You \n"
+                            f"{quote}")
+
