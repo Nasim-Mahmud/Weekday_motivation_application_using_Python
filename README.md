@@ -5,3 +5,5 @@ To get this project work perfectly, first you need to open two mail account for 
 
 For Gmail:
 <ol> Enable two step verification from the mail settings. </ol>
+<ol> Go to Security --> App password --> Login again --> From the dropdown menu, select app category and device and then generate password. </ol>
+<ol> Copy that password and paste it as the value of <b>my_pass</b> variable.</ol>
