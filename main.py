@@ -4,14 +4,14 @@ import random
 
 # Finding the day of the week.
 today = dt.datetime.now()
-current_weekday = today.weekday()
-print(current_weekday)
+current_weekday = today.weekday()  # 1 means Monday
+# print(current_weekday)
 
 # Reading the quote file.
 with open("quotes.txt", "r") as data:
     all_quotes = data.readlines()
     quote = random.choice(all_quotes)
-    print(quote)
+    # print(quote)
 
 # Sending mail
 sender_email = "tmailone01@gmail.com"
@@ -27,4 +27,3 @@ if current_weekday == 4:
                             to_addrs=receiver_email,
                             msg=f"Subject:WeekDay Motivation For You \n"
                                 f"{quote}")
-
