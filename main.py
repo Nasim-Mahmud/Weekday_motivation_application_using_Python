@@ -5,7 +5,7 @@ import random
 # Finding the day of the week.
 today = dt.datetime.now()
 current_weekday = today.weekday()
-
+print(current_weekday)
 
 # Reading the quote file.
 with open("quotes.txt", "r") as data:
@@ -19,11 +19,12 @@ sender_email_pass = "rteqejuqqdhcgpzx"
 
 receiver_email = "tmailtwo02@yahoo.com"
 
-with SMTP("smtp.gmail.com", 587) as connection:
-    connection.starttls()
-    connection.login(user=sender_email, password=sender_email_pass)
-    connection.sendmail(from_addr=sender_email,
-                        to_addrs=receiver_email,
-                        msg=f"Subject:WeekDay Motivation For You \n"
-                            f"{quote}")
+if current_weekday == 4:
+    with SMTP("smtp.gmail.com", 587) as connection:
+        connection.starttls()
+        connection.login(user=sender_email, password=sender_email_pass)
+        connection.sendmail(from_addr=sender_email,
+                            to_addrs=receiver_email,
+                            msg=f"Subject:WeekDay Motivation For You \n"
+                                f"{quote}")
 
