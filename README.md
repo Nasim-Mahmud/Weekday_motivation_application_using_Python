@@ -13,3 +13,5 @@ To get this project work perfectly, first you need to open two mail account for 
 <ol> Enable two step verification from the mail settings. </ol>
 <ol> Go to Account info --> Account security --> Generate and manage password --> Login again --> Write down the app name and then click generate password. </ol>
 <ol> Copy that password and paste it as the value of <b>my_pass</b> variable.</ol>
+
+Happy Coding :D
